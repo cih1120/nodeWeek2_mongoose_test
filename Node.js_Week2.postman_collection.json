@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "7786a447-9e24-49d1-b1c2-c30c48483eb6",
+		"name": "Node.js_Week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28861869"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2-mongoose-test.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-mongoose-test",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nodeweek2-mongoose-test.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-mongoose-test",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Hannah\",\n    \"type\": \"group\",\n    \"tags\": [\"遊記\"],\n    \"image\": \"url\",\n    \"content\": \"內容\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2-mongoose-test.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2-mongoose-test",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Hannah\",\n    \"type\": \"group\",\n    \"tags\": [\"遊記\"],\n    \"image\": \"url\",\n    \"content\": \"內容\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3005/posts/661a860edff9e6462c52a2bb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3005",
+					"path": [
+						"posts",
+						"661a860edff9e6462c52a2bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3005/posts/661a860edff9e6462c52a2bb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3005",
+					"path": [
+						"posts",
+						"661a860edff9e6462c52a2bb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
